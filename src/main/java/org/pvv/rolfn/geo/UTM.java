@@ -49,6 +49,13 @@ public class UTM
 					(easting == other.easting) &&
 					(northing == other.northing);
 		}
+		if(o instanceof WGS84) {
+			UTM other = new UTM((WGS84)o);
+			return (zone == other.zone) &&
+					(letter == other.letter) &&
+					(easting == other.easting) &&
+					(northing == other.northing);
+		}
 		return false;
 	}
 

@@ -41,6 +41,11 @@ public class WGS84 {
 			return (latitude == other.latitude) &&
 					(longitude == other.longitude);
 		}
+		if(o instanceof UTM) {
+			WGS84 other = new WGS84((UTM)o);
+			return (latitude == other.latitude) &&
+					(longitude == other.longitude);
+		}
 		return false;
 	}
 
