@@ -20,4 +20,4 @@ More explanations of the math can be found
 [here](http://www.uwgb.edu/dutchs/UsefulData/UTMFormulas.htm).
 
 # BUGS
-There is no error-handling...
+Error handling implemented. Coordinate validation is still not perfect, though
